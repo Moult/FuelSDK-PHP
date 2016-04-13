@@ -1,5 +1,20 @@
-FuelSDK-PHP
-============
+# FuelSDK-PHP
+
+This is essentially the [official FuelSDK](https://github.com/salesforce-marketingcloud/FuelSDK-PHP) with a wrapper class.
+
+For usage, please see `sample.php`. The wrapper class is `ExactTargetClient.php`.
+
+ExactTarget has a legacy SOAP API, a legacy REST API, and a new REST API. Their
+new REST API does not have the endpoints related to data extensions that we
+need. Half of their functionality is supported through their legacy SOAP API,
+and the other half through their legacy REST API. Their legacy FuelSDK connects
+to both of these as it sees fit. Their code is terrible, and contains many bugs
+and assumptions. this wrapper makes it marginally less painful to interact with
+it.
+
+-----
+
+# Original documentation
 
 ExactTarget Fuel SDK for PHP
 
