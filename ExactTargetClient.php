@@ -52,17 +52,14 @@ class ExactTargetClient
         $postDRRow = new ET_DataExtension_Row();
         $postDRRow->authStub = $this->client;
         $postDRRow->props = $data;
-        /* $postDRRow->Name = $data_extension_name; */
         $postDRRow->CustomerKey = $customer_key;	
         $postResult = $postDRRow->post();
         return $postResult->results;
     }
 
     public function create_data_extension($data_extension_name, $customer_key, array $columns) {
-        /* $column = new DataExtensionColumn; */
-        /* $column->name = 'foo_bar'; */
-        /* $client->create_data_extension('foobarbaz', 'foobarbaz', [$column]) */
-        throw new Exception('FuelSDK does not properly format XML.');
+        throw new Exception('This function does not work yet as FuelSDK does not properly format XML.');
+
         $postDE = new ET_DataExtension();
         $postDE->authStub = $this->client;
         $postDE->props = [
